@@ -92,6 +92,10 @@ html, body {
   background-color: #29AE81;
   color: #FFFFFF;
 }
+
+.webview .intro .container img{
+  padding-left: 16px;
+}
 .webview .intro .container h1 {
   font-size: 2rem;
   text-align: center;
@@ -385,6 +389,21 @@ html, body {
   width: 50px;
 }
 
+.webview .parceiros .container .p-title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #29AE81;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.webview .parceiros .container{
+  height: 100%;
+}
+
 .webview .contato {
   width: 100%;
   margin-bottom: 30px;
@@ -499,6 +518,10 @@ html, body {
     font-size: 1.2rem;
   }
 
+  .webview .intro .container img{
+    padding-left: 45px;
+  }
+
   .webview .sobre .container .row {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -570,6 +593,9 @@ html, body {
 @media only screen and (min-width: 1024px) {
   .webview .intro .container h1 {
     font-size: 3rem;
+  }
+  .webview .intro .container img{
+    padding-left: 100px;
   }
   .webview .intro .container p {
     font-size: 1.6rem;

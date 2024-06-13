@@ -147,6 +147,15 @@ html, body {
   font-weight: bold;
   color: #29AE81;
 }
+
+.webview .sobre .container .row .c-descricao p span{
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #29AE81;
+
+}
 .webview .sobre .container .row {
   width: 100%;
   margin-top: 30px;
@@ -400,8 +409,35 @@ html, body {
   padding-bottom: 100px;
 }
 
-.webview .parceiros .container{
-  height: 100%;
+.s-carrousel {
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition-timing-function: linear;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: calc((100% - 60px) / 3); 
+    margin-right: 30px; 
+    box-sizing: border-box; 
+}
+
+.swiper-slide:last-child {
+    margin-right: 0; 
+}
+
+.body .icon span img {
+    display: block;
+    max-width: 500px;
+    height: 400px;
 }
 
 .webview .contato {
@@ -578,6 +614,11 @@ html, body {
     color: #FFFFFF;
   }
 
+  .swiper-slide {
+    width: calc((100% - 30px) / 1); /* Ajustar para caber duas imagens lado a lado */
+    margin-right: 15px; /* Ajustar o espaçamento conforme necessário */
+}
+
   .webview .contato .container .title {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -654,7 +695,7 @@ html, body {
     max-width: 400px;
   }
   .webview .sobre .container .row .c-descricao {
-    padding: 10px;
+    padding: 40px;
     margin-top: 0px;
   }
   .webview .sobre .container .row .c-descricao p {
@@ -729,6 +770,55 @@ html, body {
     display: block;
     color: #FFFFFF;
   }
+
+  .parceiros {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.p-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.s-carrousel {
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition-timing-function: linear;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: calc((100% - 60px) / 3); 
+    margin-right: 30px; 
+    box-sizing: border-box; 
+}
+
+.swiper-slide:last-child {
+    margin-right: 0; 
+}
+
+.body .icon span img {
+    display: block;
+    max-width: 500px;
+    height: 400px;
+}
+
 
   .webview .contato {
     margin-bottom: 50px;

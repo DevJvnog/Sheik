@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Sheik Dos Sites</title>
-    <link rel="shortcut icon" href="./assets/images/sheik.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/formato_sheik-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
@@ -11,6 +11,13 @@
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="./assets/css/owl-carrousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl-carrousel/owl.theme.green.min.css">
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     
 </head>
 <body>
@@ -39,27 +46,14 @@
                     </div>
                     <div class="c-descricao">
                         <p>
-                            @OSheikDosSites é a escolha ideal para seu site. Usamos tecnologias avançadas como HTML5, CSS3, JavaScript e WordPress para garantir qualidade e inovação. Contrate facilmente e receba um site incrível em 10 dias úteis, com profissionais qualificados.
+                            Conheça o Sheik dos Sites, sua solução definitiva para <span class="title">criar um site impactante e impulsionar seu faturamento! </span> Com design inovador e estratégias de SEO avançadas, transformamos sua presença online, atraindo mais clientes e <span class="title"> aumentando suas vendas.</span> Deixe seu negócio brilhar na web com o Sheik dos Sites!
 
 
                         </p>
                         <div class="habilidades">
                             <div class="h-titulos">
                                 <div class="h-item">
-                                    
-                                    <span><img src="./assets/images/html-removebg-preview.png" alt=""></span>
-                                </div>
-                                <div class="h-item">
-                                    
-                                    <span><img src="./assets/images/css-removebg-preview.png" alt=""></span>
-                                </div>
-                                <div class="h-item">
-                                    
-                                    <span><img src="./assets/images/js.png" alt="" ></span>
-                                </div>
-                                <div class="h-item">
-                                    
-                                    <span><img src="./assets/images/wordpress-removebg-preview.png" alt=""></span>
+                            
                                 </div>
                             </div>
                             <div class="h-c-porcentagem">
@@ -202,59 +196,109 @@
         <section class="parceiros">
             <div class="container">
                 <div class="p-title">
-                    <h2>Parceiros:</h2>
+                    <h2>O que estão falando?</h2>
                 </div>
                 <div class="s-carrousel">
-                    <div class="s-carrousel-container">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item s-carrousel-item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <div class="body">
                                     <div class="icon">
-                                        <span><img src="./assets/images/parceiros/gogle.webp" alt=""></span>
+                                        <span><img src="./assets/images/parceiros/conversa1.png" alt=""></span>
                                     </div>
                                 </div>
                             </div>
-    
-                            <div class="item s-carrousel-item">
+                            <div class="swiper-slide">
                                 <div class="body">
                                     <div class="icon">
-                                        <span><img src="./assets/images/parceiros/ibm-removebg-preview.png" alt=""></span>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-    
-                            <div class="item s-carrousel-item">
-                                <div class="body">
-                                    <div class="icon">
-                                        <span><img src="./assets/images/parceiros/microsoft.jpg" alt=""></span>
+                                        <span><img src="./assets/images/parceiros/conversa2.png" alt=""></span>
                                     </div>
                                 </div>
                             </div>
-    
-                            <div class="item s-carrousel-item">
+                            <div class="swiper-slide">
                                 <div class="body">
                                     <div class="icon">
-                                        <span><img src="./assets/images/parceiros/Logo-Nuvem-Hospedagem-01-removebg-preview.png" alt=""></span>
+                                        <span><img src="./assets/images/parceiros/conversa3.png" alt=""></span>
                                     </div>
                                 </div>
                             </div>
-
-                            
-                            <div class="item s-carrousel-item">
+                            <div class="swiper-slide">
                                 <div class="body">
                                     <div class="icon">
-                                        <span><img src="./assets/images/parceiros/Dell-Logo-removebg-preview.png" alt=""></span>
+                                        <span><img src="./assets/images/parceiros/conversa1.png" alt=""></span>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="body">
+                                    <div class="icon">
+                                        <span><img src="./assets/images/parceiros/conversa2.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="body">
+                                    <div class="icon">
+                                        <span><img src="./assets/images/parceiros/conversa3.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var swiper = new Swiper('.swiper-container', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        loop: true,
+                        speed: 800, // Velocidade de transição em milissegundos
+                        // Remover autoplay
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                
+                    // Adicionar efeito de movimento suave no scroll
+                    let lastScrollTop = 0;
+                    let scrollDirection = '';
+                
+                    window.addEventListener('scroll', function() {
+                        let st = window.pageYOffset || document.documentElement.scrollTop;
+                        
+                        if (st > lastScrollTop) {
+                            // Scroll para baixo
+                            if (scrollDirection !== 'down') {
+                                scrollDirection = 'down';
+                                swiper.slideNext();
+                            }
+                        } else {
+                            // Scroll para cima
+                            if (scrollDirection !== 'up') {
+                                scrollDirection = 'up';
+                                swiper.slidePrev();
+                            }
+                        }
+                        
+                        lastScrollTop = st <= 0 ? 0 : st; // Para evitar números negativos
+                    });
+                
+                    // Habilitar o loop ao arrastar com o mouse
+                    swiper.on('slideChangeTransitionStart', function () {
+                        if (swiper.activeIndex === 0) {
+                            swiper.slideToLoop(swiper.slides.length - 3, 0, false);
+                        } else if (swiper.activeIndex === swiper.slides.length - 1) {
+                            swiper.slideToLoop(2, 0, false);
+                        }
+                    });
+                });
+                </script>
+                          
         </section>
         
-
         <section class="contato">
             <div class="container">
                 <div class="title">
